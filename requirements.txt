@@ -5,3 +5,5 @@ python -m pip install --upgrade PySimpleGUI
 python -m pip install --upgrade Pillow
 python -m pip install --upgrade PSG-Reskinner
 python -m pip install --upgrade cloudscraper
+exit
+exit
