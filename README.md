@@ -23,6 +23,12 @@ To run the program use 'run.vbs' or 'python zbombr115s_PS4_Games_List.py'
 
 Please DM me with any bugs you find and I'll try my best to fix them in a timely manner.
 
+Current bugs I know of:
+
+-Some game CUSA/SLES aren't grabbed properly
+
+-Some game links aren't picked up by the scraper (tends to be ps2 games?)
+
 -I know the Size calculation isn't always right, that's partially lazy programming on my part
 
-It's possible for the site to pseudo-rate-limit you if you make too many requests but this can be avoided by not spam-updating the games list.
+-It's possible for the site to pseudo-rate-limit you if you make too many requests but this can be avoided by not spam-updating the games list.
