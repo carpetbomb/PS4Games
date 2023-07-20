@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "python zbombr115s_PS4_Games_List.py",0,True
