@@ -19,6 +19,8 @@ Open up Command Prompt and CTRL+V (paste)
 
 To run the program use 'run.vbs' or 'python zbombr115s_PS4_Games_List.py'
 
+-If it's your first time running it, it will take a minute to open as it initially scrapes the games list and makes the GameOutput.json file (don't re-open it)
+
 # Bugs
 
 Please DM me with any bugs you find and I'll try my best to fix them in a timely manner.
