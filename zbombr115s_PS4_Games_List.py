@@ -30,18 +30,19 @@ import os.path
 check_file = os.path.isfile('./GameOutput.json')
 if check_file == False:
     #Do game list download thing
+                print("Games list not found! Making one now...", flush=True)
                 URL = "https://dlpsgame.com/list-all-game-ps4/"
-                print("Requesting Content")
+                print("Requesting Content", flush=True)
                 page = requests.get(URL)
 
 
-                print("Scraping Page")
+                print("Scraping Page", flush=True)
                 soup = BeautifulSoup(page.content, "html.parser")
                 results = soup.find("ol", class_="display-posts-listing")
 
                 posts = results.find_all("li", class_="listing-item")
                 
-                print("got "+str(len(posts))+" posts!")
+                print("Got "+str(len(posts))+" posts! - Dumping to file now.", flush=True)
 
                 data = {}
                 numero = 1
@@ -57,7 +58,7 @@ if check_file == False:
 
                     numero = numero + 1
 
-                print("Successfully dumped games.")
+                print("Successfully dumped games. Starting GUI now.", flush=True)
 
 #                           ==================================== Sanitising Game List ====================================
 
