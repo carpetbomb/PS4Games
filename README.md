@@ -17,7 +17,7 @@ Once you've got python installed open up the 'requirements.txt' file and press C
 
 Open up Command Prompt and CTRL+V (paste)
 
-To run the program use 'run.vbs' or click into the folder path, type 'cmd' and then 'python app.py'
+To run the program click into the folder path, type 'cmd' and then 'python app.py'
 
 -If it's your first time running it, it will take a minute to open as it initially scrapes the games list and makes the GameOutput.json file (don't re-open the script unless it errors)
 
