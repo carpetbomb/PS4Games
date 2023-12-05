@@ -32,3 +32,10 @@ Current bugs I know of:
 -I know the Size calculation isn't always right, that's partially lazy programming on my part
 
 -It's possible for the site to pseudo-rate-limit you if you make too many requests but this can be avoided by not spam-updating the games list.
+
+# Changelog
+
+[05/12/2023]
+Made the program run faster, added file download API
+Added support for multiple hosts
+QOL Updates
