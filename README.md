@@ -17,9 +17,9 @@ Once you've got python installed open up the 'requirements.txt' file and press C
 
 Open up Command Prompt and CTRL+V (paste)
 
-To run the program use 'run.vbs' or 'python zbombr115s_PS4_Games_List.py'
+To run the program use 'run.vbs' or click into the folder path, type 'cmd' and then 'python app.py'
 
--If it's your first time running it, it will take a minute to open as it initially scrapes the games list and makes the GameOutput.json file (don't re-open it)
+-If it's your first time running it, it will take a minute to open as it initially scrapes the games list and makes the GameOutput.json file (don't re-open the script unless it errors)
 
 # Bugs
 
@@ -27,9 +27,7 @@ Please DM me with any bugs you find and I'll try my best to fix them in a timely
 
 Current bugs I know of:
 
--Some game CUSA/SLES aren't grabbed properly
-
--Some game links aren't picked up by the scraper (tends to be ps2 games?)
+-Some game links aren't allways picked up by the scraper (tends to be ps2 games?)
 
 -I know the Size calculation isn't always right, that's partially lazy programming on my part
 
