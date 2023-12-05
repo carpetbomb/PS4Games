@@ -28,12 +28,15 @@ Please DM me with any bugs you find and I'll try my best to fix them in a timely
 
 Current bugs I know of:
 
--Some game links aren't allways picked up by the scraper (tends to be ps2 games?)
+-Some game links aren't always picked up by the scraper (tends to be ps2 games?)
 
 -I know the Size calculation isn't always right, that's partially lazy programming on my part
 
 -It's possible for the site to pseudo-rate-limit you if you make too many requests but this can be avoided by not spam-updating the games list.
 
+-Some games CUSAs are grabbed incorrectly and lots of other data is included (i have fixed this i just need to push the update)
+
+-Clearing the search box doesn't reset the list resulting in needing to re-open the script
 # Changelog
 
 [05/12/2023]
