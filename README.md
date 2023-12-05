@@ -10,6 +10,7 @@ If you'd like to donate at all to give me incentive to work on it more feel free
 [karmamodderz@gmail.com]
 
 # Installation
+If you had the old version, delete the old GamesOutput.json
 
 First things first you're gonna need Python, you can get it here: https://www.python.org/downloads/
 
