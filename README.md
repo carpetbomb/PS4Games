@@ -34,12 +34,15 @@ Current bugs I know of:
 
 -It's possible for the site to pseudo-rate-limit you if you make too many requests but this can be avoided by not spam-updating the games list.
 
--Some games CUSAs are grabbed incorrectly and lots of other data is included (i have fixed this i just need to push the update)
+-Some games CUSAs have 'p's in them that shouldn't, i would fix but hvaen't got round to it.
 
 -Clearing the search box doesn't reset the list resulting in needing to re-open the script
 # Changelog
 
 [05/12/2023]
-Made the program run faster, added file download API
-Added support for multiple hosts
-QOL Updates
+- Made the program run faster, added file download API
+- Added support for multiple hosts
+- QOL Updates
+[10/12/2023]
+- Fixed problem with updating the games list
+- Fixed game CUSA grabbing garbage data
