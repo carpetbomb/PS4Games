@@ -40,7 +40,7 @@ if check_file == False:
     URL = "https://dlpsgame.com/list-all-game-ps4/"
     print(f"-->    Requesting Content")
     page = requests.get(URL)
-
+    print(page)
 
     print(f"-->    Scraping Page")
     soup = BeautifulSoup(page.content, "html.parser")
@@ -310,7 +310,8 @@ def GetContent(url:str, name:str):
     
     for post in posts:
         if str(post).find("CUSA") != -1 or str(post).find("SLES") != -1 or str(post).find("SLUS") != -1:
-            GameCUSA = strip(post)
+            if str(post).find('https') == -1:
+                GameCUSA = strip(post)
         #==================================#
         if str(post).find("Game") != -1 or str(post).find("Link Download:") != -1:
             links = post.find_all('a')
@@ -369,12 +370,13 @@ def GetContent(url:str, name:str):
             GotGame = True
 
     if GotGame == False:
+        print(f"Couldn't Find Game Link, Re-Scraping Content...")
         for raw in results:
             if str(raw).find("CUSA") != -1 or str(raw).find("SLES") != -1 or str(raw).find("SLUS") != -1:
-                GameCUSA = strip(raw)
+                if str(raw).find('https') == -1:
+                    GameCUSA = strip(raw)
 
         posts = results.find_all("a")
-        print(f"Couldn't Find Game Link, Re-Scraping Content...")
         for post in posts:
             #==================================#
             if post['href'].find("1fichier") != -1:
@@ -579,10 +581,11 @@ while True:
         print(f"-->    Requesting Content")
         page = requests.get(URL)
 
-
         print(f"-->    Scraping Page")
         soup = BeautifulSoup(page.content, "html.parser")
         results = soup.find("ol", class_="display-posts-listing")
+        if results == "None": #results will return 'None' if nothing found
+            print(f"{c.RED}[ERROR] --> Listing search returned NONE (Cloudflare Flagged?)")
 
         posts = results.find_all("li", class_="listing-item")
                 
@@ -640,7 +643,7 @@ while True:
                             found = True
                     
                     if not found:
-                        foundDifferences.append(Item(newgame.gameName, newgame.link, newgame.CUSA, newgame.gamedl, newgame.updl, newgame.dlcdl, newgame.release, newgame.genre, newgame.lang, newgame.GameSize, newgame.ImageLink)) # Adding new games into list
+                        foundDifferences.append(Item(newgame.gameName, newgame.link, "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE")) # Adding new games into list
 
         my_item_list = []
         gamesListRaw, gameAmount = loadList()
