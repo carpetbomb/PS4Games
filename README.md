@@ -38,11 +38,12 @@ Current bugs I know of:
 -Clearing the search box doesn't reset the list resulting in needing to re-open the script
 # Changelog
 
+[10/12/2023]
+- Fixed problem with updating the games list
+- Fixed game CUSA grabbing garbage data
+  
 [05/12/2023]
 - Made the program run faster, added file download API
 - Added support for multiple hosts
 - QOL Updates
-- 
-[10/12/2023]
-- Fixed problem with updating the games list
-- Fixed game CUSA grabbing garbage data
+
