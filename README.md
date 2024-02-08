@@ -6,8 +6,7 @@ Initially I made this for myself because I wanted to see which games were newly 
 
 Since everyone seems to like it I have decided to release it!
 
-If you'd like to donate at all to give me incentive to work on it more feel free to do so at my paypal
-[karmamodderz@gmail.com]
+
 
 # Installation
 If you had the old version, delete the old GamesOutput.json
