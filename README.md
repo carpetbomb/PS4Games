@@ -38,6 +38,8 @@ Current bugs I know of:
 -Clearing the search box doesn't reset the list resulting in needing to re-open the script
 # Changelog
 
+[23/07/24]
+- Changed PySimpleGUI to FreeSimpleGUI as they had added a license system
 [10/12/2023]
 - Fixed problem with updating the games list
 - Fixed game CUSA grabbing garbage data
