@@ -20,8 +20,8 @@ import math
 import requests
 import webbrowser
 from bs4 import BeautifulSoup
-import PySimpleGUI as sg
-from PySimpleGUI import Window, Text, Button, Push, Titlebar, theme_list, theme, LOOK_AND_FEEL_TABLE, TIMEOUT_KEY
+import FreeSimpleGUI as sg
+from FreeSimpleGUI import Window, Text, Button, Push, Titlebar, theme_list, theme, LOOK_AND_FEEL_TABLE, TIMEOUT_KEY
 import pyperclip as pc
 from PIL import Image
 import cloudscraper
