@@ -1,9 +1,7 @@
-python -m pip install --upgrade pip
-python -m pip install --upgrade pyperclip
-python -m pip install --upgrade bs4
-python -m pip install --upgrade PySimpleGUI
-python -m pip install --upgrade Pillow
-python -m pip install --upgrade PSG-Reskinner
-python -m pip install --upgrade cloudscraper
-exit
-exit
+pip
+pyperclip
+bs4
+FreeSimpleGui
+Pillow
+PSG-Reskinner
+cloudscraper
